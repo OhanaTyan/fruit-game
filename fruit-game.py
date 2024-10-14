@@ -84,7 +84,7 @@ class Fruit_game:
     def change(self, i: int, m: int, n: int):
         if self.turn != i:
             return 4
-        
+
         pi =  self.get_pi(i)
         table = self.get_table()
         if is_all_equal(pi):
@@ -108,6 +108,7 @@ class Fruit_game:
                 continue
             else:
                 break
+            
         
         if is_all_equal(new_pi):
             return 3
